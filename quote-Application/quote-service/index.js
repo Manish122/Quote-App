@@ -7,6 +7,8 @@ import cors from 'cors';
 // go in package.json and add type: module 
 // Step 2 ------------>>>>>>>> Routing
 import Routes from './server/route.js';
+// require('dotenv').config();
+
 
 const app = express(); // we need to do this with every express application to initilise it with app and then we run 
 // it as a fuction
@@ -19,9 +21,9 @@ app.use(cors());
 // Step 2 ------------------->
 app.use('/users', Routes);
 
-const URL = 'mongodb+srv://manish:w4MbStZ24cODdDVN@cluster0.lijzk.mongodb.net/CRUDAPP?retryWrites=true&w=majority'
+const URL = process.env.URL;
 
-const PORT = process.env.PORT || '8080'; //2 - get the port from env file, if not available pick 8080
+const PORT = process.env.PORT || '8000'; //2 - get the port from env file, if not available pick 8080
 
 // connect with the database, takes two arguments 1 - connection url 2 - object with all the options
 // Some of the functions, features are deprecated so it might give you a warning, to avoid that warning
