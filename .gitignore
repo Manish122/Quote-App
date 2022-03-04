@@ -1,3 +1,3 @@
-quote-Application
-node_modules
-Inshorts-Clone
+/node_modules
+/Inshorts-Clone
+/Word predictor
