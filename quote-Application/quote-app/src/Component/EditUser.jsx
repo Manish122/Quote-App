@@ -49,26 +49,26 @@ const EditUser = () => {
 
     return (
         <FormGroup className={classes.container}>
-            {/* <Typography variant="h4">Edit Information</Typography> */}
+            <Typography variant="h4">Edit Information</Typography>
            
             {/* <FormControl> */}
-                {/* <InputLabel htmlFor="my-input">Username</InputLabel> */}
-                {/* <textarea onChange={(e) => onValueChange(e)} name='username' id="my-input" aria-describedby="my-helper-text" ></textarea> */}
+                <InputLabel htmlFor="my-input">Username</InputLabel>
+                <textarea onChange={(e) => onValueChange(e)} name='username' id="my-input" aria-describedby="my-helper-text" ></textarea>
                 {/* <textarea value =  */}
                 <h2    id="my-input" aria-describedby="my-helper-text"value={username} > {username}</h2>
 
                 {/* <textarea> */}
             {/* </FormControl> */}
             <FormControl>
-                {/* <InputLabel htmlFor="my-input">quotetext</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='quotetext' value={quotetext} id="my-input" aria-describedby="my-helper-text" /> */}
+                <InputLabel htmlFor="my-input">quotetext</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='quotetext' value={quotetext} id="my-input" aria-describedby="my-helper-text" />
                 <p    id="my-input" aria-describedby="my-helper-text"value={username} > {quotetext}</p>
 
             </FormControl>
            
-            {/* <FormControl>
+            <FormControl>
                 <Button variant="contained" color="primary" onClick={() => editUserDetails()}>Edit User</Button>
-            </FormControl> */}
+            </FormControl>
         </FormGroup>
     )
 }

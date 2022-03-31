@@ -57,7 +57,7 @@ const AllUsers = () => {
                         <TableCell>{user.quotetext}</TableCell>
                         <TableCell>
                             <Button color="primary" variant="contained" style={{marginRight:10}} component={Link} to={`/edit/${user._id}`}>View Full Screen</Button> {/* change it to user.id to use JSON Server */}
-                            {/* <Button color="secondary" variant="contained" onClick={() => deleteUserData(user._id)}>Delete</Button>  */}
+                            <Button color="secondary" variant="contained" onClick={() => deleteUserData(user._id)}>Delete</Button> 
                             {/* change it to user.id to use JSON Server */}
                         </TableCell>
                     </TableRow>
